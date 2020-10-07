@@ -26,7 +26,7 @@ def predict():
 
     output = prediction[0]
 
-    return render_template('index.html', prediction_text='The Magnitude and The Depth of The Earthquake should be $ {}'.format(output))
+    return render_template('index.html', prediction_text='The Magnitude and The Depth of The Earthquake should be {}'.format(output))
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
